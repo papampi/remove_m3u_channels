@@ -11,6 +11,6 @@ include='UK: USA-CANADA group-title="SPORT" AUSTRALIA'
 echo "#EXTM3U" > $channel_list
 for i in $include
 do
-  echo "$i"
+  echo "Keeping $i Channels"
   sed  -n -r -e "/$i/,+1p" $m3ulist | tee -a $channel_list
 done
