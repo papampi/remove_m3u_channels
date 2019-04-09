@@ -6,7 +6,7 @@ m3ulist="/home/$USER/Downloads/tv_channels.m3u"
 channel_list="/home/$USER/Downloads/tv_channels_plus.m3u"
 rm $channel_list
 
-include="UK: USA-CANADA SPORT AUSTRALIA"
+include='UK: USA-CANADA group-title="SPORT" AUSTRALIA'
 
 echo "#EXTM3U" > $channel_list
 for i in $include
