@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 wget -O /home/$USER/Downloads/tv_channels_plus.m3u "http://sampleiptv.com:1557/get.php?username=xxxxxx&password=xxxxxxx&type=m3u_plus&output=ts"
