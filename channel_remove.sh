@@ -1,10 +1,10 @@
 #!/bin/bash
 
-wget -O ~/Downloads/tv_channels_plus.m3u "http://sampleiptv.com:1557/get.php?username=xxxxxx&password=xxxxxxx&type=m3u_plus&output=ts"
-m3ulist="~/Downloads/tv_channels_plus.m3u"
-lines="~/Downloads/lines"
+wget -O /home/$USER/Downloads/tv_channels_plus.m3u "http://sampleiptv.com:1557/get.php?username=xxxxxx&password=xxxxxxx&type=m3u_plus&output=ts"
+m3ulist="/home/$USER/Downloads/tv_channels_plus.m3u"
+lines="/home/$USER/Downloads/lines"
 touch $lines
-channel_list="~/Downloads/tv_channels.m3u"
+channel_list="/home/$USER/Downloads/tv_channels.m3u"
 cp $m3ulist $m3ulist.edit
 
 exclude="KOMBETARE LOKALE MUZIKA MACEDONIAN Poland LAJME FEMIJET KS-PORT VIP-ALB FILMA Adults PORTUGAL TURKEY Czech DEUTSCH BRAZIL RUSSIAN SPAIN VOD Islam ISLAM Vod INDIA ARABIAN ROMANIA MALTESE BULGARIAN CHINESE AFRICAN GREEK PAKISTANI HUNGARY AFGHANISTAN ARGENTINA KURDISTAN V0D Slovenia LATINO ALBANIAN SHQIPTARE FETARE GERMANY SWITZERLAND Shqip kultur SWEDEN DENMARK NORWAY Finland NETHERLANDS BELGIUM SHKENCE Deutsch Vendlindja AZERBAIJAN EX-YU Shkokla TURKE ALQUILERO NOUVELLE ISRAELI AUSTRALIA Luxembourg Popcorn Viasat SWEDISH DANISH GERMAN Swiss POLISH SPANISH TRING NOVITA PRIMAFILA KSPORT FINISH NORWEGIAN DUTCh RUSSE SERIALE"
