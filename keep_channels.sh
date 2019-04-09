@@ -8,8 +8,9 @@ rm $channel_list
 
 include="UK: USA-CANADA SPORT AUSTRALIA"
 
+echo "#EXTM3U" > $channel_list
 for i in $include
 do
   echo "$i"
-  sed  -n -r -e '/EXTM3U/p' -e "/$i/,+1p" $m3ulist | tee -a $channel_list
+  sed  -n -r -e "/$i/,+1p" $m3ulist | tee -a $channel_list
 done
